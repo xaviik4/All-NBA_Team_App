@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player name and ID:"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_margin="25dp"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title"/>
+
+    <EditText
+        android:id="@+id/playerID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:hint="Enter Player ID"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:ems="20"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:layout_centerHorizontal="true"
+        android:padding="13dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/black"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playerID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/black"
+        android:text="Add player"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:padding="10dp"
+        app:cornerRadius="35dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/playerID"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/addPlayer"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/black"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:padding="10dp"
+        app:cornerRadius="35dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/viewStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playerID"
+        android:layout_toRightOf="@+id/addPlayer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/black"
+        android:text="View stats"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:padding="10dp"
+        app:cornerRadius="35dp" />
+
+    <TextView
+        android:id="@+id/playerList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addPlayer"
+        android:hint="Player list:"
+        android:textSize="15sp"
+        android:ems="20"
+        android:textColorHint="@color/black"
+        android:layout_centerHorizontal="true"
+        android:padding="13dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/black"/>
+
+    <TextView
+        android:id="@+id/playerStats"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addPlayer"
+        android:hint="Player stats:"
+        android:textSize="15sp"
+        android:ems="20"
+        android:textColorHint="@color/black"
+        android:layout_centerHorizontal="true"
+        android:padding="13dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/black"/>
+
+</RelativeLayout>
