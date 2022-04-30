@@ -26,6 +26,7 @@
         android:layout_below="@+id/title"
         android:textSize="20sp"
         android:ems="20"
+        android:hint="Create your top ten NBA list!"
         android:textColorHint="@color/black"
         android:layout_centerHorizontal="true"
         android:padding="13dp"
